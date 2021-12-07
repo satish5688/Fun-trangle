@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+
+    <style>
+        body{
+            background-color:lightblue;
+            text-align: center;
+        }
+        header {
+            background-color: purple;
+            margin: auto;
+            padding: 1rem;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+        }
+        .fun {
+            text-align: left;
+            color:#fff;
+        }
+
+        .link {
+            text-decoration: none;
+            /* display: block; */
+            text-align: right;
+            padding: 0 .5rem;
+            color: aliceblue;
+        }
+        .container{
+            text-align: right;
+        }
+
+        
+        .quiz-form{
+            margin: 2rem;
+            font-style: italic;
+            font-size: larger;
+            font-weight: 300;
+        }
+        #submit-btn{
+            padding: 0.2rem;
+            margin-top: 2rem;
+            border-radius: 0.5rem;
+            background-color:blue ;
+            padding: 0.5rem;  
+            font-size:15px;
+            border-radius: 1rem;
+        }
+        #output{
+            font-size: larger;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        .foot{
+            background-color: purple;
+            padding:4rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            margin-top :15rem
+        }
+        .link2{
+            color: rgb(208, 178, 214);
+            padding: 1.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .question-container{
+          font-size:20px
+
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1 class="fun">Fun with Triangle</h1>
+    <div class="container">
+        <a class="link" href="index.html">Is Triangle?</a>
+        <a class="link" style="font-size:2rem;" href="quiz.html">Triangle Quize</a>
+        <a class="link" href="hypotenuse.html">Calcualte Hypotenuse</a>
+        <a class="link" href="area.html">Area of Triangle</a>
+    </div>
+</header>
+
+    <h1>Triangle-quiz</h1>
+    <h2>--For each correct answer you will get 1 point--</h2>
+    <form class="quiz-form">
+      <div class="question-container">
+        <p>
+          1)  A possitive when decreased by 4 is equal to 21 times the recipocak of the  number, then the number is :
+        </p>
+        <label><input type="radio" name="question1" value="5" />5</label>
+        <label><input type="radio" name="question1" value="7" />7</label>
+        <label><input type="radio" name="question1" value="3" />3</label>
+      </div>
+      <div class="question-container">
+        <p>
+          2)  The sum of digit'sthe two digit number is 9 less than the number which of the 
+          following digit is at unit place if the number ?
+        </p>
+        <label>
+          <input type="radio" name="question2" value="1" />1</label>
+        <label
+          ><input type="radio" name="question2" value="2" />2</label
+        >
+        <label
+          ><input type="radio" name="question2" value="Data is insuficient" />Data is insuficient</label
+        >
+      </div>
+    </form>
+    <button  id="submit-btn">Submit Answers</button>
+    <div id="output"></div>
+    <footer class="foot">
+      <a class="link2" href="https://www.linkedin.com/feed/"target="_blank">Linkdin</a>
+      <a class="link2" href="https://github.com/satish5688"target="_blank">Github</a>
+      <a class="link2" href="https://www.instagram.com/"target="_blank">Instagram</a>
+
+  </footer>
+  
+    <script src="quiz.js"></script>
+
+</body>
+</html>
+
